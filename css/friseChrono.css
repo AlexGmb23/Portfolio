@@ -1,0 +1,124 @@
+/* 
+ * ie7.js makes selectors work on IE
+ * https://code.google.com/p/ie7-js/
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+#timeline {
+    list-style: none;
+    margin: 50px 0 30px 120px;
+    padding-left: 30px;
+    border-left: 8px solid #2F5371;
+}
+
+#timeline li {
+    margin: 40px 0;
+    position: relative;
+}
+
+#timeline p {
+    margin: 0 0 15px;
+}
+
+.date {
+    margin-top: -10px;
+    top: 50%;
+    left: -158px;
+    font-size: 0.95em;
+    line-height: 20px;
+    position: absolute;
+}
+
+.circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -44px;
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border: 5px solid #647392;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+.content {
+    max-height: 20px;
+    padding: 50px 20px 0;
+    border-color: #647392;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.content:before,
+.content:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    right: 100%;
+}
+
+.content:before {
+    border-right-color: inherit;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.content:after {
+    border-right-color: #647392;
+    border-width: 17px;
+    top: 50%;
+    margin-top: -17px;
+}
+
+.content p {
+    max-height: 0;
+    color: transparent;
+    text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
+    overflow: hidden;
+}
+
+label {
+    font-size: 20px;
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.radio {
+    display: none;
+}
+
+.radio:checked+.relative label {
+    cursor: auto;
+}
+
+.radio:checked+.relative .circle {
+    background: #f98262;
+}
+
+.radio:checked~.content {
+    max-height: 180px;
+    border-color: #647392;
+    margin-right: 20px;
+}
+
+.radio:checked~.content p {
+    max-height: 200px;
+    color: black;
+}
+
+.FC {
+    display: flex;
+}
