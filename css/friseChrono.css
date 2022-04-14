@@ -6,7 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 #timeline {
     list-style: none;
-    margin: 50px 0 30px 120px;
+    margin: 50px 0 30px 150px;
     padding-left: 30px;
     border-left: 8px solid #2F5371;
 }
@@ -21,9 +21,10 @@
 }
 
 .date {
+    display: flex;
     margin-top: -10px;
     top: 50%;
-    left: -158px;
+    left: -188px;
     font-size: 0.95em;
     line-height: 20px;
     position: absolute;
@@ -109,16 +110,23 @@ label {
 }
 
 .radio:checked~.content {
-    max-height: 180px;
+    max-height: 300px;
     border-color: #647392;
     margin-right: 20px;
 }
 
 .radio:checked~.content p {
-    max-height: 200px;
+    max-height: 260px;
     color: black;
 }
 
 .FC {
     display: flex;
+}
+
+a.lowatemImg {
+    display: flex;
+    justify-self: flex-start;
+    width: 200px;
+    height: 200px;
 }
