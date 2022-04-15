@@ -132,12 +132,17 @@ a.lowatemImg {
 }
 
 @media screen and (max-width: 1000px){
+    #timeline{
+        margin-left: 170px;
+    }
+
     label{
         font-size: x-large;
     }
 
     .date{
         font-size: large;
+        left: -200px;
     }
 
     .radio:checked~.content{
