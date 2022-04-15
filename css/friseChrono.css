@@ -137,7 +137,7 @@ a.lowatemImg {
     }
 
     .date{
-        font-size: smaller;
+        font-size: large;
     }
 
     .radio:checked~.content{
