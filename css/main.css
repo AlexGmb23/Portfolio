@@ -19,6 +19,7 @@ header {
 header ul {
     list-style: none;
     display: flex;
+    justify-content: space-around;
 }
 
 li {
@@ -76,4 +77,13 @@ h4 {
     margin-bottom: auto;
 }
 
-@media only screen and (max-width: 1000px) {}
+@media screen and (max-width: 1000px){
+    body{
+        font-size: 150%;
+    }
+    button{
+        font-size: 40px;
+        height: auto;
+        width: auto;
+    }
+}

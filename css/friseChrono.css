@@ -130,3 +130,21 @@ a.lowatemImg {
     width: 200px;
     height: 200px;
 }
+
+@media screen and (max-width: 1000px){
+    label{
+        font-size: x-large;
+    }
+
+    .date{
+        font-size: smaller;
+    }
+
+    .radio:checked~.content{
+        max-height: 400px;
+    }
+
+    .radio:checked~.content p{
+        max-height: 400px;
+    }
+}
