@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+body{
+    display: block
+}
+
+ul {
+    list-style: none
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#header .logo img {
+    display: flex
+}
+
+.logo{
+    padding-left: 50px;
+}
+
+#header .logo a {
+    display: flex;
+    background-color: white;
+    border-radius: 100px;
+    pointer-events: all;
+    width: 35px;
+    height: 35px;
+}
+
+#header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(16 29 48 / 90%);
+    backdrop-filter: blur(0px);
+}
+
+div .menu{
+    display: block;
+}
+
+#header .menu a {
+    display: flex;
+    padding: 10px 15px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#header .menu a:hover {
+    transition: 0.5s;
+    color: cyan;
+}
+
+#header .menu ul {
+    display: flex;
+}
+
+div .content{
+    display: flex;
+    flex-direction: column
+}
+
+li {
+    opacity: 1;
+}
+
+#img_fond {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+div #img_fond img{
+    width: 100%;
+    height: 768px;
+}
+
+main .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.salut {
+    font-size: 18px;
+    color: lightblue;
+    margin-top: 30px;
+}
+
+.nom {
+    font-size: clamp(40px, 8vw, 80px);
+    color: white;
+    margin-top: 25px
+}
+
+.activite {
+    font-size: clamp(40px, 8vw, 80px);
+    color: lightgrey
+}
+
+.mini_bio {
+    max-width: 480px;
+    font-size: 20px;
+    color: lightgray;
+    line-height: 1.3;
+    margin-top: 15px
+}
+
+
+#sect_a_propos .content
+{
+	margin-top: clamp(80px, 7vw, 95px);
+	margin-bottom: calc(clamp(100px, 7vw, 120px) - 3.3vw);
+}
+
+#sect_a_propos .a_propos_content
+{
+	display: flex;
+	gap: 100px 100px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 1300px) { #sect_a_propos .a_propos_content { gap: 50px 50px; } }
+
+@media screen and (max-width: 800px)
+{
+	#sect_a_propos .a_propos_content
+	{
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+#sect_a_propos
+{
+    display: flex;
+    margin-top: 200px;
+}
+
+#sect_a_propos .titre_sect
+{
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+#sect_a_propos .a_propos_content .p1
+{
+	font-size: 20px;
+	line-height: 1.3;
+    margin-left: 30px;
+}
+
+#sect_a_propos .photo
+{
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sect_a_propos .photo img
+{
+	width: clamp(250px, 35vw, 380px);
+    border-radius: 1000px;
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px)
+{
+	#sect_a_propos .photo img
+	{
+		width: clamp(250px, 60vw, 380px);
+	}
+}
+
+#sect_projets
+{
+    display: flex;
+    background-color: rgb(70, 83, 197);
+}
+
+#sect_projets .titre_sect
+{
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+.projet
+{
+    display: flex;
+    gap: 100px 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1300px) { .projet { gap: 50px 50px; } }
+
+@media screen and (max-width: 800px)
+{
+    .projet
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.projet_img a {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    pointer-events: all;
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+}
+
+.projet_img a img {
+    border-radius: 60px;
+}
+
+.projet_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.projet_titre
+{
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.projet_desc{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 15px;
+}
+
